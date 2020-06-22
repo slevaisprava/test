@@ -11,12 +11,15 @@ while i >= 0:
     src.append('')
     i -= 1
 
-res = 0
-while res != 200: 
-    for i in range(1, 19, 2):
-        src[i] = random.choice(symbols)
-    code = ''.join(src)
-    res = eval(code)
+res_lst = []
+for i in range(20):    
+    res = 0
+    while res != 200: 
+        for i in range(1, 19, 2):
+            src[i] = random.choice(symbols)
+            code = ''.join(src)
+            res = eval(code)
+    res_lst.append(f'{code} = {res}')
+    i += 1
 
-print(f'{code} = {res}')
-
+print('\n'.join(set(res_lst)))
