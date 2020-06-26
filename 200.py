@@ -19,6 +19,6 @@ for i in range(20):
             src[j] = random.choice(symbols)
             code = ''.join(src)
             res = eval(code)
-    res_set.add(str(code))
+    res_set.add(code)
 
 print('\n'.join(res_set))
