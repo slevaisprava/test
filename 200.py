@@ -22,4 +22,4 @@ for i in range(20):
     res_set.add(str(code))
     i += 1
 
-print('\n'.join(set(res_set)))
+print('\n'.join(res_set))
