@@ -17,7 +17,7 @@ for i in range(20):
     while res != 200: 
         for j in range(1, 19, 2):
             src[j] = random.choice(symbols)
-            code = ''.join(src)
+        code = ''.join(src)
         res = eval(code)
     res_set.add(code)
 
