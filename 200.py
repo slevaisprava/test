@@ -2,14 +2,13 @@
 import random
 
 symbols = ['+', '-', '']
-
-i = 9
 src = []
-while i >= 0:
+
+for i in range(9, -1, -1):
     src.append(str(i))
     if i == 0: break
     src.append('')
-    i -= 1
+
 
 res_set = set()
 for i in range(20):    
